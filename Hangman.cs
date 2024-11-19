@@ -1,4 +1,4 @@
-﻿namespace Hangman
+namespace Hangman
 {
     public class Hangman
     {
@@ -365,7 +365,6 @@
             string wordToGuess = new string('_', wordSymbols.Length);
             char[] wordToGuessChar = wordToGuess.ToCharArray();
 
-
             Console.WriteLine(frames[incorectGuess]);
             Console.WriteLine($"\nWord: {wordToGuess}");
             Console.Write("Your symbol: ");
@@ -398,7 +397,6 @@
                             wordToGuessChar[i] = playerSymbol;
                         }
                     }
-
 
                     for (int i = 0; i < wordToGuessChar.Length; i++)
                     {
